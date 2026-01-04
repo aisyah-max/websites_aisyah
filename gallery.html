@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    background: #f7dfea; 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: static;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: maroon;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    transform: translateX(8px);
+    color: black;
+    background-color: lightcoral; 
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+}
+
+.grid-item {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+.cafe-section {
+    background: #fdeaf1;
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 80px;
+}
+
+.cafe-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.cafe-card {
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.cafe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cafe-card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #444;
+}
+
+.cafe-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;   
+  overflow: hidden;      
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="index.html" target="_self">Home</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="education.html" target="_blank">Education</a>
+    <a href="skills_assignment.html" target="_blank">Skills</a>
+    <a href="gallery.html" target="_blank">Gallery</a>
+</nav>
+<div class="container">
+
+    <h1 class="title"><b>My 2025 Moments ⋆.ೃ࿔*:･</b></h1>
+
+    <div class="grid-container">
+
+        <div class="grid-item"><img src="image1/gallery10.jpg"></div>
+        <div class="grid-item"><img src="image1/gallery17.jpg"></div>
+        <div class="grid-item"><img src="image1/gallery3.jpg"></div>
+
+        <div class="grid-item"><img src="image1/gallery5.jpg"></div>
+        <div class="grid-item"><img src="image1/gallery14.jpg"></div>
+        <div class="grid-item"><img src="image1/gallery13.jpg"></div>
+
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

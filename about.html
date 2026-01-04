@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+
+   <style>
+    body
+    {
+        background: url(image1/backgroundpink.jpeg);
+        
+
+    }
+
+
+
+
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: static;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: maroon;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    transform: translateX(8px);
+    color: black;
+    background-color: lightcoral; 
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.about-section h2{
+    text-align: center;
+    color: darkcyan;
+    font-size: 19px;
+    margin-top: 20px;
+    background-color: thistle;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: center;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: lightpink;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+.card-image {
+   background-color: lightcoral;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px dashed darkred;
+}
+.img-1{
+    background-image: url(image1/selfie_edit.png);
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    margin-right: 40px;
+}
+.img-2{
+    background-image: url(image1/aisyahedit2.png);
+}
+.img-3{
+    background-image: url(image1/kdramaposter.jpeg);
+}
+.card:hover{
+    transform: scaleX(1.05);
+    transition:2s;
+
+}
+.button{
+    justify-content: center;
+    text-align: center;
+}
+
+.hometown-container {
+    width: 85%;
+    max-width: 1100px;
+    background: #ffe6f2; 
+    margin: 60px auto;
+    padding: 35px;
+    border-radius: 30px;
+    border: 6px double hotpink;
+    box-shadow: 0 10px 30px rgba(255, 150, 180, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+}
+
+
+.hometown-container::before {
+    content: "🎀 My Sweet Hometown 🎀";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffb6d9;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Georgia';
+    color: white;
+    font-weight: bold;
+    border: 3px solid hotpink;
+    box-shadow: 0 4px 10px rgba(255, 80, 160, 0.3);
+}
+
+.hometown-text {
+    width: 55%;
+    font-family: Georgia;
+}
+
+.hometown-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b30059;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px white;
+}
+
+.hometown-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4d0033;
+    background: #fff0f7;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px dashed pink;
+}
+
+.hometown-container {
+    transition: 0.5s ease;
+}
+
+.hometown-container:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 45px rgba(255, 140, 180, 0.4);
+    background: #ffe3f4;
+}
+
+.hometown-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.hometown-image img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 25px;
+    border: 10px solid white;
+    outline: 5px dashed hotpink;
+    box-shadow: 0 6px 15px rgba(255, 120, 160, 0.4);
+    background: white;
+}
+.audio-box {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    margin: 50px auto;
+}
+.audio-box:hover{
+    transition: 0.5s ease;
+}
+
+.audio-box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 45px rgba(255, 140, 180, 0.4);
+    background: #ffe3f4;
+}
+
+
+.audio-box:hover::after {
+    content: "💗 💕 💗";
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    font-size: 26px;
+    animation: pop 0.7s ease;
+}
+
+@keyframes pop {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+
+}
+
+.audio-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;        
+        }
+
+.audio-box audio {
+            margin: 50px auto;
+
+}
+.audio-row {
+    display: flex;
+    gap: 20px;         
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+}
+.img-audio{
+    border: 2px dashed hotpink;
+    border-radius: 22px;
+    padding: 30px;
+}
+.audio-box p{
+    margin: 30px;
+}
+.video-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;         
+    flex-wrap: wrap;   
+    margin-top: 40px;
+}
+.video-card {
+    transition: 0.5s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 45px rgba(255, 140, 180, 0.4);
+    background: #ffe3f4;
+}
+
+.video-card:hover::after {
+    content: "💗 💕 💗";
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    font-size: 26px;
+    animation: pop 0.7s ease;
+}
+
+@keyframes pop {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.video-card {
+    width: 45%;       
+    min-width: 300px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.video-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px dashed hotpink;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+}
+.video-card {
+    width: 400px;            
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.video-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Georgia;
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px dashed hotpink;
+}
+
+.video-text-overlay {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    z-index: 10;
+    font-family: Georgia;
+}
+
+.video {
+    width: 100%;
+    border-radius: 12px;
+}
+.food-section {
+    background-color: #fbe4ec; 
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.food-section h2 {
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.food-card{
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+.food-card:hover{
+     transform: scale(1.03);
+}
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.food-card p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+
+   </style>
+</head>
+<body>
+
+    <header>
+         <nav class="navbar">
+        <a href="index.html" target="_self">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="skills_assignment.html" target="_blank">Skills</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+    </nav>
+    </header>
+    <center><iframe src="https://free.timeanddate.com/clock/ia70le7x/n122/fn7/fs20/tcf9f/pcf99/ftb/bat2/bac900/pa2/tt0/tw0/tm1/th1/ta1/tb4" frameborder="0" width="150" height="61"></iframe></center>
+
+
+
+<section class="container">
+    <div class="card">
+        <div class="card-image img-1"></div>
+        <h2 style="text-align: center;"> Ი︵𐑼 ABOUT ME ༄.° </h2>
+        <p style="font-size: 15px; font-family: georgia; text-align: center; word-spacing: 1.6px">❀ My name is Wan Aisyah Saffiah Binti Mohd Nawi. I am the youngest of seven siblings.  Being the youngest in the family has helped me become a self-reliant, upbeat, and resilient person.  Nasi ayam is my favorite dish, especially the kind my mother makes, which I cherish for its heavy taste and comfortable texture.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-image img-2"></div>
+        <h2 style="text-align:center;">‧₊˚✧ MY AMBITION ✧˚₊‧</h2>
+        <p style="text-align:center; font-size:15px; font-family:georgia;"> ۶۟ৎ My ambition is to create a future I can be proud of. I aim to work in a field that truly inspires me, continue improving myself, and eventually become someone who can make a positive difference to the people around me. I aim that I want to be the businesswomen in the future</p>
+    </div>
+
+    <div class="card">
+        <div class="card-image img-3"></div>
+        <h2 style="text-align:center;">⋆˚࿔ MY HOBBY 𝜗𝜚˚⋆</h2>
+
+        <p style="text-align:center; font-size:15px; font-family:georgia;"> ʚଓ My favourite hobby is watching K-dramas. I enjoy them so much that sometimes I can finish all 16 episodes in just one day. The captivating storylines, emotional moments, and charming characters always keep me glued to the screen, making time pass without me even noticing. Current favourite kdrama that i watch is Taxi Driver. </p>
+        <a href="https://www.google.com/search?sca_esv=d3b392c8b5f1cde4&q=Taxi+Driver+(South+Korean+TV+series)&si=AMgyJEs03_IawLpG0pN8Imr0quNL8BRn4IwD6UzBpqKXGhmQPZguSJxdCyq_72roPPZxCoHBvr1DaxZTpSdUNdaW6-jm03yo0FOKjsF9BGyMBk6gVvk_50ExLeruiQ4uavKYELVA8P5bToxIYZr0PHU6B24HtD0Yauo6J_PWLUUBadZMZ_oGg2c%3D&sa=X&sqi=2&ved=2ahUKEwjOs5aM3qCRAxVI3TgGHWoeOsUQ_coHegQIDxAB&ictx=0&biw=851&bih=779&dpr=1.13"> <img src="button/newbutton.png" class="button" alt="image of button" style="height: 45px;"></a>
+            
+
+    </div>
+    
+</section>
+
+    <div class="hometown-container">
+    <div class="hometown-text">
+        <h2>The Story of My Hometown - Kg Laut, Kelantan</h2>
+
+            <ul style="list-style-type: square; font-size: 19px;">
+            <li>My hometown, Kg. Laut in Kelantan, It is a unique and beautiful mosque in terms of its architecture. The uniqueness of this mosque is that its structure is made of wood and does not use nails where it is only nailed.</li> 
+            <li>The building is still intact and used as a place of worship. Now the mosque is located in Nilam Puri where it was moved in 1965 from the original site because it was found that the original site was in the Kelantan River.</li> 
+            <li>Kampung Laut mosque is the oldest mosque still in existence in Kelantan and among the oldest in the archipelago. The mosque is said to have been built in the 18th century by Muslim expatriates who commuted between Champa and Java with the help of the locals. The original site of the mosque is located in Kampung Laut, Tumpat on the banks of the Kelantan River.</li>
+        </ul>
+       
+    </div>
+
+    <div class="hometown-image">
+        <a href="https://maps.app.goo.gl/HcQRSnWUmpH9uuHP6" target="_blank" title="Click here to follow the maps"><img src="image1/warisan.jpg" alt="My Hometown"></a>
+</div>    
+</div>
+
+ <div class="audio-row"> 
+<div class="audio-box">
+    <h2 style="font-size:25px">My Favourite Song 🎧</h2>
+    <img src="animation/musicgif2.gif">
+    <p style="font-size:30px; font-family:nunito"> ˚˖𓍢ִỈ🌷͙֒✧˚.🎀༘⋆ Kaulah Segalanya- Sammy Simorangkir</p>
+    <audio controls>
+        <source src="audio/kaulahsegalanya.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio> 
+</div>
+
+
+<div class="audio-box">
+    <h2 style="font-size:25px">My Favourite Song 🎧</h2>
+    <img src="animation/musicgif2.gif">
+    <p style="font-size:30px; font-family:nunito;"> 🫧𓇼𓏲*ੈ✩‧₊˚🎐Sandar Padaku- Alif Aziz & Mira Filzah</p>
+    <audio controls>
+        <source src="audio/sandarpadaku.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+
+<div class="audio-box">
+   <h2 style="font-size:25px">My Favourite Song 🎧</h2>
+  <img src="animation/musicgif2.gif">
+   
+     <p style="font-size:30px; font-family:nunito;">✩♬ ₊˚.🎧⋆☾⋆⁺₊✧ Bintang- Budak KacaMata</p>
+    <audio controls>
+        <source src="audio/bintang.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<div class="video-row">
+
+    <div class="video-card">
+        <h2 class="video-title">MY PRECIOUS MOMENTS</h2>
+        <div class="video-wrapper">
+            <div class="video-text-overlay">My Lovely Memory 🌸</div>
+            <video controls>
+                <source src="video/vid2.mov" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</div>
+
+<section class="food-section" id="favourite-food">
+    <h2>My Favourite Food ‧₊˚ ⋅ 🥢🍜‧₊˚ ⋅</h2>
+
+    <div class="food-container">
+        <div class="food-card">
+            <img src="image1/ramen.jpg" alt="Ramen">
+            <p>My favourite food is <del>Nasi Tomato</del> Ramen 🍜</p>
+        </div>
+
+        <div class="food-card">
+            <img src="image1/nasiayam.jpg" alt="nasi ayam">
+            <p>My favourite food is <del>Nasi Beriani</del>Nasi Ayam🍗 𓎩 .⋆ﾟ </p>
+        </div>
+
+        <div class="food-card">
+            <img src="image1/sushi.jpg" alt="Sushi">
+            <p>My favourite food is <del>Nasi Kerabu</del> Sushi🍙🍣🍱🥢</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
